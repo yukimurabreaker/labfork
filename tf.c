@@ -10,7 +10,7 @@
 
 	int main(void){
 	
-//	char name[10];
+
 	for(int i = 1;i < 5; i++){
 	pid_t pid = fork();
 	if(pid == 0){
@@ -23,14 +23,13 @@
 	else if(pid != 0){
 		
 		wait(NULL);
-//		return EXIT_SUCCESS;
-		nameUser();
+		
 		}
 	else {
 		return EXIT_FAILURE;
 		}
 	}	
-//	nameUser();
+	nameUser();
 	return EXIT_SUCCESS;
 
 	}
